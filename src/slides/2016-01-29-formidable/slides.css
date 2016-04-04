@@ -1,0 +1,18 @@
+/* Two-column layout */
+.left-column
+{
+  color: #777;
+  float: left;
+  height: 92%;
+  width: 20%;
+}
+.left-column h2:last-of-type, .left-column h3:last-child
+{
+  color: #000;
+}
+.right-column
+{
+  float: right;
+  padding-top: 1em;
+  width: 75%;
+}

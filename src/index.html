@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slides</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <select class="slides-select slides-select__small" onchange="onSlidesChange(this);"></select>
+    <div class="remark-slides-area">
+      <div class="remark-slide-container remark-visible">
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/remark.min.js"></script>
+    <script>
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="js/remark.language.js"></script>
+    <script src="js/slides.js"></script>
+    <script>
+      var resetRemark = function(name, options) {
+        name = name || '';
+        options = $.extend({
+          highlightStyle: 'tomorrow-night',
+          highlightLanguage: 'remark',
+          highlightLines: true,
+          sourceUrl: 'slides/' + name + '/slides.md',
+          ratio: '16:9'
+        }, options);
+        // Remove old remark
+        $('.remark-notes-area').remove();
+        $('.remark-slides-area').remove();
+        $('.remark-preview-area').remove();
+        $('.remark-backdrop').remove();
+        $('.remark-pause').remove();
+        $('.remark-help').remove();
+        // Reset the position
+        window.location.hash = '#1';
+        // Create new remark
+        remark.create(options);
+      };
+      var onSlidesChange = function(select) {
+        // Get slide dir name
+        var name = $(select).val();
+        resetRemark(name, slides[name].options);
+      };
+      resetRemark('index', {
+        slideNumberFormat: ''
+      });
+      var $slides = $('.slides-select');
+      // Add placeholder option for slides
+      $slides.append($("<option selected disabled>Choose a presentation</option>"));
+      // Add option from data for slides
+      $.each(slides, function(key) {
+        $slides.append($("<option />").val(key).text(this.title + ' - ' + this.author + ' - ' + this.date));
+      });
+    </script>
+  </body>
+</html>
+

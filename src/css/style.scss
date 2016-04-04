@@ -1,0 +1,113 @@
+@import 'variables';
+
+@import 'montserrat-webfont/scss/montserrat-webfont';
+@import 'roboto-fontface/css/roboto-fontface.scss';
+@import 'ubuntu-fontface/_ubuntu.scss';
+
+body
+{
+  font-family: 'Roboto';
+}
+.slides-select__small
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3; /* z-index is at 2 for .remark-visible */
+  max-width: 100px;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+h1, h2, h3
+{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.remark-slide-content h1
+{
+  font-size: 3em;
+}
+.remark-slide-content h2
+{
+  font-size: 2em;
+}
+.remark-slide-content h3
+{
+  font-size: 1.6em;
+}
+.footnote
+{
+  bottom: 3em;
+  position: absolute;
+}
+li p
+{
+  line-height: 1.5em;
+}
+.red
+{
+  color: #fa0000;
+}
+.large
+{
+  font-size: 2em;
+}
+a, a > code
+{
+  text-decoration: none;
+}
+code
+{
+  border-radius: 4px;
+}
+.remark-code, .remark-inline-code
+{
+  font-family: 'Ubuntu Mono';
+}
+
+/* Themes for highlighted code */
+.hljs-tomorrow
+{
+  .remark-code-line-highlighted
+  {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+.hljs-tomorrow-night
+{
+  .remark-code-line-highlighted {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Templates */
+.template-peopledoc
+{
+  a, a > code
+  {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+.template-title
+{
+  background: $template-title-background;
+  color: $template-title-color;
+  text-shadow: 0 0 20px #333;
+  h1, h2
+  {
+    color: #f3f3f3;
+    line-height: $template-title-hx-line-height;
+  }
+  &.template-peopledoc {
+
+  }
+}
+.template-slide
+{
+  &.template-peopledoc {
+    
+  }
+}
+
