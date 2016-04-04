@@ -1,11 +1,11 @@
 name: title
 layout: true
-class: center, middle, template-peopledoc, template-title
+class: center, middle, template-base, template-title
 
 ---
 name: slide
 layout: true
-class: template-peopledoc, template-slide
+class: template-base, template-slide
 
 ---
 template: title
@@ -16,6 +16,10 @@ template: title
 
 ---
 template: slide
+
+# Framework-UI
+
+## What?
 
 * Bonjour
 * Bonsoir

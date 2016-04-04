@@ -7,6 +7,7 @@
 body
 {
   font-family: 'Roboto';
+  font-weight: 400;
 }
 .slides-select__small
 {
@@ -21,7 +22,7 @@ body
 h1, h2, h3
 {
   font-family: 'Montserrat';
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 0;
 }
 .remark-slide-content h1
@@ -82,32 +83,28 @@ code
 }
 
 /* Templates */
-.template-peopledoc
+.template-base
 {
+  background: $template-base-background;
   a, a > code
   {
-    color: $link-color;
+    color: $template-base-link-color;
     text-decoration: none;
   }
+  h1 {
+    color: $template-base-h1-color;
+  }
+  h2 {
+    color: $template-base-h2-color;
+  }
 }
+
 .template-title
 {
-  background: $template-title-background;
-  color: $template-title-color;
-  text-shadow: 0 0 20px #333;
-  h1, h2
-  {
-    color: #f3f3f3;
-    line-height: $template-title-hx-line-height;
-  }
-  &.template-peopledoc {
 
-  }
 }
+
 .template-slide
 {
-  &.template-peopledoc {
-    
-  }
-}
 
+}

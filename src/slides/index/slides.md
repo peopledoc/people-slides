@@ -1,6 +1,6 @@
 name: title
 layout: true
-class: center, middle, template-peopledoc, template-title
+class: center, middle, template-base, template-title
 
 ---
 template: title
