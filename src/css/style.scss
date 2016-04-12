@@ -10,8 +10,10 @@ $slide-height: 681px;
 $logo-width: 150px;
 $logo-height: 60px;
 $title-width: $slide-width;
-$title-height: 420px;
-
+$title-height: 380px;
+$full-screen-top: 140px;
+$full-screen-bottom: 5px;
+$full-screen-padding: 40px;
 
 body {
   font-family: 'Roboto';
@@ -141,8 +143,13 @@ code {
     text-transform: uppercase;
   }
 
-  h1, h2, h3, p {
+  h1, h2, h3, p, ul, ol {
     padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  ul, ol {
+    padding-left: 8rem;
     padding-right: 4rem;
   }
 
@@ -195,4 +202,15 @@ code {
   &:before {
     background-color: #2994e5;
   }
+}
+
+img[alt=icon-16] { height: 16px; }
+img[alt=icon-24] { height: 24px; }
+img[alt=icon-32] { height: 32px; }
+img[alt=full-screen] {
+  position: absolute;
+  top: $full-screen-top;
+  left: $full-screen-padding;
+  max-width: $slide-width - 2 * $full-screen-padding;
+  max-height: $slide-height - $full-screen-top - $full-screen-bottom;
 }

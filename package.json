@@ -8,8 +8,8 @@
     "broccoli": "^0.16.9",
     "broccoli-autoprefixer": "^4.1.0",
     "broccoli-cli": "^1.0.0",
-    "broccoli-funnel": "^1.0.1",
-    "broccoli-merge-trees": "^1.1.1",
-    "broccoli-sass-source-maps": "^1.6.0"
+    "broccoli-funnel": "^1.0.7",
+    "broccoli-merge-trees": "^1.1.4",
+    "broccoli-sass-source-maps": "^1.8.1"
   }
 }
