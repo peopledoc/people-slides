@@ -11,6 +11,11 @@ var slides = {
     author: 'Guillaume && Guillaume',
     date: '2016-01-29',
     options: {}
+  },
+  '2016-10-13-volzord-tech': {
+    title: 'VOLZORD Tech Prez',
+    author: 'Front-Team',
+    date: '2016-10-13',
+    options: {}
   }
 };
-
