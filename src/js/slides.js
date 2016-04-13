@@ -5,12 +5,6 @@ var slides = {
     author: 'Guillaume && Guillaume',
     date: '2016-01-29',
     options: {}
-  },
-  '2016-04-07-framework-ui': {
-    title: 'Framework-UI',
-    author: 'Front-Team',
-    date: '2016-07-04',
-    options: {}
   }
 };
 
