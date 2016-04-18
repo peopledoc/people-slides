@@ -1,8 +1,3 @@
-name: title
-layout: true
-class: center, middle, template-base, template-title
-
----
-template: title
+class: center, middle, template-base
 
 # Please choose a presentation on the top left!

@@ -1,6 +1,6 @@
 name: title
 layout: true
-class: center, middle, template-base, template-title
+class: center, middle, template-base
 
 ---
 name: slide
@@ -16,6 +16,7 @@ template: title
 ---
 template: title
 
+# Formidable
 ## ![What is it?](slides/2016-01-29-formidable/what.jpg)
 
 ---
@@ -25,6 +26,7 @@ template: slide
   ## What's this?
   ### Front-end
 ]
+
 .right-column[
   A simple, in-browser, form builder tool targeted at people who wants to create form easily, featuring:
 
@@ -49,21 +51,19 @@ template: slide
 ]
 
 .right-column[
+Leit motiv, try to use or extend standard mechanism
 
-  Leit motiv, try to use or extend standard mechanism
+- Almost iso-functional with novaFormBuilder:
 
-  - Almost iso-functional with novaFormBuilder
+  * API CRUD
 
-    * API CRUD
+  * Python/Django objects
 
-    * Python/Django objects
+  * Python/Django Form
 
-    * Python/Django Form
+  * handle Roles
 
-    * handle Roles
-
- Bonnii:  Python/Django Builder
-
+Bonnii:  Python/Django Builder
 ]
 
 ---
@@ -78,14 +78,13 @@ template: slide
 
 .right-column[
 
- What are missing ?
+ What are missing?
 
   - Formatting Field (HelpText, Title,...)
 
   - Diff/Changelog/Versionning
 
   - Global validation & Conditionnal fields
-
 ]
 
 ---
@@ -99,8 +98,7 @@ template: slide
 
 
 .right-column[
-
- Cooperation with Front
+Cooperation with Front
 
   - Spec in advanced
 
@@ -108,16 +106,17 @@ template: slide
 
   - Champagne, Wine and Happiness :)
 
- Thank you @GreatWizard !
-
+Thank you @GreatWizard !
 ]
 
 ---
 template: title
 
+# Formidable
 ## Time for [demo](http://localhost:8000/forms/)
 
 ---
 template: title
 
+# Formidable
 ## That's all folks (for now)!
