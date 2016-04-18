@@ -8,10 +8,7 @@
     "montserrat-webfont": "~1.0.3",
     "roboto-fontface": "~0.4.5",
     "ubuntu-fontface": "~0.1.10",
-    "remark": "~0.13.0"
-  },
-  "dependencies": {
-    "jquery": "~1.12.2"
+    "remark": "~0.13.0",
+    "jquery": "~2.2.3"
   }
 }
-
