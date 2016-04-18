@@ -107,6 +107,19 @@ code
 
 .template-title
 {
+  &.remark-slide-content
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  h1 {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  h1, h2, h3, p
+  {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
   padding-top: 377px;
   &:before
   {
@@ -155,22 +168,15 @@ code
   }
 }
 
-.template-end
+.template-title-end
 {
   padding-top: 427px;
   &:before
   {
-    content: ' ';
-    background-repeat: no-repeat;
-    background-color: #fff;
     background-size: $end-width $end-height;
     background-image: url('/img/end.png');
     width: $end-width;
     height: $end-height;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
   }
 }
 
