@@ -1,12 +1,12 @@
 BROCCOLI=./node_modules/.bin/broccoli
 
-build: clean-build
-	$(BROCCOLI) build dist
-
 serve: clean-build
 	$(BROCCOLI) serve
 
 s: serve
+
+build: clean-build
+	$(BROCCOLI) build dist
 
 clean-build:
 	rm -Rf dist
@@ -25,5 +25,4 @@ help:
 	@echo "  serve (s)    to start the development server"
 	@echo "  clean-build  to clean build files"
 	@echo "  clean-deps   to clean dependencies files"
-	@echo "  install      install dependencies"
-
+	@echo "  install      to install dependencies"
