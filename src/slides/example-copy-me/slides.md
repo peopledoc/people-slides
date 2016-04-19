@@ -30,7 +30,6 @@ dd/mm/yyyy
 **Your name**
 
 ---
-
 template: title
 class: template-title-desk
 

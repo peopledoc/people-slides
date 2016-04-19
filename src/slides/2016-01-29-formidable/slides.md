@@ -22,35 +22,27 @@ template: title
 ---
 template: slide
 
-.left-column[
-  ## What's this?
-  ### Front-end
-]
+# What's this?
+## Front-end
 
-.right-column[
-  A simple, in-browser, form builder tool targeted at people who wants to create form easily, featuring:
+A simple, in-browser, form builder tool targeted at people who wants to create form easily, featuring:
 
-  - A lot of fields
+- A lot of fields
 
-  - Validations on fields
+- Validations on fields
 
-  - Different context's accesses
+- Different context's accesses
 
-  - Preview of the form by context with validation on-the-fly
+- Preview of the form by context with validation on-the-fly
 
-  - Made with &hearts; and EmberJS
-]
+- Made with &hearts; and EmberJS
 
 ---
 template: slide
 
-.left-column[
-  ## What's this?
-  ### Front-end
-  ### Back-end
-]
+# What's this?
+## Back-end
 
-.right-column[
 Leit motiv, try to use or extend standard mechanism
 
 - Almost iso-functional with novaFormBuilder:
@@ -64,40 +56,27 @@ Leit motiv, try to use or extend standard mechanism
   * handle Roles
 
 Bonnii:  Python/Django Builder
-]
 
 ---
 template: slide
 
-.left-column[
-  ## What's this?
-  ### Front-end
-  ### Back-end
-]
+# What's this?
+## Back-end
 
-
-.right-column[
-
- What are missing?
+What are missing?
 
   - Formatting Field (HelpText, Title,...)
 
   - Diff/Changelog/Versionning
 
   - Global validation & Conditionnal fields
-]
 
 ---
 template: slide
 
-.left-column[
-  ## What's this?
-  ### Front-end
-  ### Back-end
-]
+# What's this?
+## Back-end
 
-
-.right-column[
 Cooperation with Front
 
   - Spec in advanced
@@ -107,7 +86,6 @@ Cooperation with Front
   - Champagne, Wine and Happiness :)
 
 Thank you @GreatWizard !
-]
 
 ---
 template: title
