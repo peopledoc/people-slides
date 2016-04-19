@@ -5,26 +5,24 @@
 @import 'ubuntu-fontface/_ubuntu.scss';
 
 
-// Variables
-
 $slide-width: 1210px;
 $slide-height: 681px;
-$logo-width: 200px;
-$logo-height: 80px;
+$logo-width: 150px;
+$logo-height: 60px;
 $title-width: $slide-width;
 $title-height: 450px;
 $end-width: $slide-width;
 $end-height: 500px;
 
-// Style
 
-body
-{
+body {
   font-family: 'Roboto';
   font-weight: 400;
+  color: #384046;
 }
-.slides-select__small
-{
+
+// Dropdown at top left of the page allowing you to select a presentation
+.slides-select__small {
   position: absolute;
   left: 0;
   top: 0;
@@ -33,96 +31,128 @@ body
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
-h1, h2, h3
-{
+
+
+// TYPOGRAPHY
+
+body {
+  line-height: 1.2;
+}
+
+h1, h2, h3 {
   font-family: 'Montserrat';
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0;
 }
-.remark-slide-content h1
-{
+
+.remark-slide-content h1 {
   font-size: 3em;
 }
-.remark-slide-content h2
-{
+
+.remark-slide-content h2 {
   font-size: 2em;
 }
-.remark-slide-content h3
-{
+
+.remark-slide-content h3 {
   font-size: 1.6em;
 }
-li p
-{
-  line-height: 1.5em;
-}
-code
-{
+
+
+// CODE
+
+code {
   border-radius: 4px;
 }
-.remark-code, .remark-inline-code
-{
+
+.remark-code,
+.remark-inline-code {
   font-family: 'Ubuntu Mono';
 }
 
-/* Themes for highlighted code */
-.hljs-tomorrow
-{
-  .remark-code-line-highlighted
-  {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
+.remark-code {
+  line-height: 1.3;
 }
-.hljs-tomorrow-night
-{
-  .remark-code-line-highlighted {
-    background-color: rgba(255, 255, 255, 0.2);
+
+
+// ADD LOGO
+
+.remark-slide {
+  &:after {
+    content: ' ';
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: $logo-width $logo-height;
+    background-image: url('/img/logo.png');
+    width: $logo-width;
+    height: $logo-height;
+    position: absolute;
+    bottom: 15px;
+    left: ($slide-width - $logo-width) / 2;
+    z-index: -1;
   }
 }
 
-/* Templates */
-.remark-slide-scaler
-{
+
+// SLIDES
+
+.remark-slide-scaler {
   background-color: $template-base-background;
 }
 
-.remark-slide-content
-{
+.remark-slide-content {
   background-color: transparent;
+  width: 100%;
 }
 
-.template-base
-{
-  a, a > code
-  {
+
+// STANDARD SLIDES
+
+.template-base {
+  a, a > code {
     color: $template-base-link-color;
   }
+
   h1 {
     color: $template-base-h1-color;
   }
+
   h2 {
     color: $template-base-h2-color;
+    margin-bottom: 3rem;
   }
 }
 
-.template-title
-{
-  &.remark-slide-content
-  {
+
+// TITLE SLIDES
+
+.template-title {
+  &.remark-slide-content {
     padding-left: 0;
     padding-right: 0;
   }
+
   h1 {
     background-color: rgba(255, 255, 255, 0.5);
   }
-  h1, h2, h3, p
-  {
+
+  h2 {
+    margin: 0.4rem 0 0;
+  }
+
+  h1, h2 {
+    text-transform: uppercase;
+  }
+
+  h1, h2, h3, p {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  padding-top: 377px;
-  &:before
-  {
+
+  // Insert BG image
+  padding-top: 378px; // Image height
+
+  &:before {
     content: ' ';
     background-repeat: no-repeat;
     background-color: #fff;
@@ -136,88 +166,36 @@ code
   }
 }
 
-.template-title-bg1
-{
-  &:before
-  {
-    background-image: url('/img/background1.jpg');
+// BG image variations
+.template-title-coffee {
+  &:before {
+    background-image: url('/img/coffee.jpg');
   }
 }
 
-.template-title-bg2
-{
-  &:before
-  {
-    background-image: url('/img/background2.jpg');
+.template-title-teamwork {
+  &:before {
+    background-image: url('/img/teamwork.jpg');
   }
 }
 
-.template-title-bg3
-{
-  &:before
-  {
-    background-image: url('/img/background3.jpg');
+.template-title-desk {
+  &:before {
+    background-image: url('/img/desk.jpg');
   }
 }
 
-.template-title-bg4
-{
-  &:before
-  {
-    background-image: url('/img/background4.jpg');
+.template-title-transition {
+  h1 {
+    color: #fff;
+    background-color: transparent;
   }
-}
 
-.template-title-end
-{
-  padding-top: 427px;
-  &:before
-  {
-    background-size: $end-width $end-height;
-    background-image: url('/img/end.png');
-    width: $end-width;
-    height: $end-height;
+  h2 {
+    color: $template-base-h1-color;
   }
-}
 
-
-.template-slide
-{
-  &:before
-  {
-    content: ' ';
-    background-repeat: no-repeat;
-    background-color: #fff;
-    background-size: $logo-width $logo-height;
-    background-image: url('/img/logo.png');
-    width: $logo-width;
-    height: $logo-height;
-    position: absolute;
-    bottom: 0;
-    left: ($slide-width - $logo-width) / 2;
-    z-index: -1;
+  &:before {
+    background-color: #2994e5;
   }
-}
-
-/* Two-column layout */
-.left-column
-{
-  color: #777;
-  float: left;
-  height: 92%;
-  width: 25%;
-}
-.left-column h2:last-of-type
-{
-  color: $template-base-h1-color;
-}
-.left-column h3:last-child
-{
-  color: $template-base-h2-color;
-}
-.right-column
-{
-  float: right;
-  padding-top: 1em;
-  width: 70%;
 }
