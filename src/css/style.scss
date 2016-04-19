@@ -10,9 +10,7 @@ $slide-height: 681px;
 $logo-width: 150px;
 $logo-height: 60px;
 $title-width: $slide-width;
-$title-height: 450px;
-$end-width: $slide-width;
-$end-height: 500px;
+$title-height: 420px;
 
 
 body {
@@ -150,7 +148,7 @@ code {
   }
 
   // Insert BG image
-  padding-top: 378px; // Image height
+  padding-top: $title-height - 72px; // Image height
 
   &:before {
     content: ' ';
