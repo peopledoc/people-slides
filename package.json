@@ -4,6 +4,9 @@
   "authors": [
     "GreatWizard <guillaume.gerard88@gmail.com>"
   ],
+  "scripts": {
+    "test": "make build"
+  },
   "devDependencies": {
     "broccoli": "^0.16.9",
     "broccoli-autoprefixer": "^4.1.0",

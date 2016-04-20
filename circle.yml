@@ -1,0 +1,13 @@
+machine:
+  node:
+    version: 4.2.2
+dependencies:
+  pre:
+    - npm rebuild node-sass
+  override:
+    - make install
+deployment:
+  slides:
+    branch: master
+    commands:
+      - rsync -e "ssh" -P -rvz --delete dist/* slides@doc.novapost.fr:~/www/
