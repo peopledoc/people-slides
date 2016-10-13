@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: 4.2.2
+dependencies:
+  pre:
+    - npm config set spin false
+    - npm install -g npm bower
+    - npm --version
+    - bower --version
+  override:
+    - make install
+deployment:
+  documentation:
+    branch: master
+    commands:
+      - rsync -Prz --delete dist/ people-slides@doc.novapost.fr:~/www/

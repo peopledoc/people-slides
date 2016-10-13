@@ -1,5 +1,7 @@
 # People Slides
 
+[![Circle CI](https://circleci.com/gh/novafloss/people-slides.svg?style=shield&circle-token=eec96c2fd598c2f14fe55a4ee75801a20e0d6bb4)](https://circleci.com/gh/peopledoc/people-slides)
+
 ## Installation
 
 Requirements:
